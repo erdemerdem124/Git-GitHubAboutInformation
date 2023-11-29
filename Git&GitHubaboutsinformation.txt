@@ -1,0 +1,56 @@
+git bir tür versiyon kontrol sistemidir.Github ise bir portaldır yani bir sitedir ve ücretsiz
+Git doğrudan Linux ve Mac ortamında çalışabilir.Microsoftta aynı durum geçerli değil
+Ayrıca Mac ve Linux'un coğunda Git yüklü olmaktadır.Git de terminal komutları yazdığımız işletim sisteminin çalıştırdığı yerdir.
+terminale git yazarsak yardım dokümantasyonları çıkmaktadır.
+--version hangi versiyonda olduğunu gösterir.
+terminal komutları
+ls komutu klasörleri ve dokümantasyonları gösterir.
+pwd nerede olduğumuzu bildiren komuttur.
+cd bizim dosyaya gidebilmemizi sağlar
+.. dersek eski konumumuza gideriz.
+clear terminali temizler
+tab birkaç harf yazdığımızda bizim için komple tamamlar.
+mkdir klasör oluşturma
+touch text dosya oluşturma
+rm dosya kaldırmak
+rm -rf klasör silme
+git config --global user.name isim kaydetme
+git config --global user.email email kaydetme
+commit bir nevi tamamlamak adamak anlamına gelir.
+branch belirli yerden sonra dallanmak anlamına gelir.
+repository yeni bir klasör olarak kaydediyor diyebiliriz.
+git status güncel git durumunu gösterir.
+git'i aktif hale getirmek başlatmak için git init kullanılır
+öncelik olarak git status'u kullanmak daha sağlıklıdır.
+git commit -m " committe yorum yapmamız zorunludur cünkü aylar sonra bile bakabiliriz ve projede yüzlerce commit olabilir.
+her commitin kendine has hash ı vardır.
+git log daha önceki commitleri ve açıklamalarını gösterir.
+git add commite eklemek anlamındadır.
+.gitignore komutların içinde çıkmaz yani görmezden gelir diyebiliriz.
+master bir branchtir.
+HEAD git içinde en son hangi committe olduğumuzu gösterir.(güncel konum)	
+git branch x yeni bir x adında branch açtığımızı gösterir
+git merge birden fazla branchi birleştirmektir.
+git switch değiştirmek geçmek branchlar arası 
+fast forwarding ileri sarmak anlamına gelir ve merge işlemini çok kolaylaştırır.
+merge conflic iki kişi aynı dosyayı ve aynı satırı değiştirirse ve git otomatik olarak merge edemezse çakışma anlamına gelir.
+stash depolamak saklamak gitte bulunan ve apayrı yerlerdir.
+pop atmaktır // git stash pop depoladığımız şeyi tekrar depodan çıkarmayı sağlar.
+farklı git dalları arasında geçiş yapmak için kullanılır git checkout komutu
+git reset commitleri siliyor direk
+git revert geri almak yani commit ettiğimiz herhangi bir şeyi geri almak için kullanılır.
+git diff commitler gibi dosyalar gibi şeylerin arasındaki farkları gösterir.
+rebase base değiştirmektir.tarihi baştan yazmak cok mantıklı bir kalıp olabilir rebase için
+Github halka açık kodların paylaşılabildiği sahşi ve birlikte kodların üzerinde değişikliklerin yapıldığı sitedir.
+pull request githuba yüklenen projelerin altında yapılan bir nevi yorumlardır.
+push ittirmek anlamına gelir.
+git push oluşturulan projeyi githubtaki kaynaga gönderir.
+public githuba yüklenen projenin herkese açık bir şekilde erişilebilmesidir.
+private ise sadece githuba projeyi yükleyen kişinin izin verdiği kişilerin erişimi olarak düşünülebilir.
+pull request açık kaynaklı bir projede katkıda bulunan veya bulunmak isteyen bir kişinin projenin sahibine değişikliklerini inceletmek için yaptıgı bir nevi taleptir.
+compare projeyi değiştiren veya yükleyen kişi arasındaki kodları kıyasla.
+git fetch başkalarının depoya yüklediği yeni işlemleri indirir diyebiliriz.
+git clone girilen http yi dosyaları istediğimiz konuma indirmiş yani klonlamış olur.
+fork ise bastığımızda direk kendi hesabımıza alırız ve projeyi aldığımız kişiden bağımsız devam etmiş oluruz.
+private projelerde settingsten collaborators üzerinden projeye erişim sağlamasını istediğimiz kişileri ekleyebiliriz.
+GitHub aslında iyi bir portföy oluşturulabilir
