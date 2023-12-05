@@ -1,0 +1,108 @@
+Algoritma;bir akışı ,bir mantığı süreçleyen bir basamaklar işlemidir.
+Algoritmalar gündelik yaşamımızda çokça kullanılır , planlama yaparken algoritmik düşnürüz.
+Algoritma Başla  ile başlar , Bitir ile biter.
+Bilgisayar yazılım ve donanım olarak ikiye ayrılır
+Program bilgisayara ne yapması gerektiğini söyleyen komutlar bütünüdür.
+Programlama dillerinden örnek verirsek Java,Phyton,PHP gibi diller vardır.
+Bilgisayarlar temelinde transistörlerden oluşur ve elektriği geçirirleri aslında 1 ve 0 lardan oluşmaktadır.
+Derleyici , bizim söylemek istediğimizi bilgisayar diline ya da bilgisayarın demek istediği şeyi bize çeviren uygulamalardır.
+yorumlayıcı,yazılımı  kısım kısım ele alırlar.
+Kaynak program, programcının bir programlama dili ile yazmış olduğu programlara denir. Java dilinde yazıldı ise .java yazar
+Editör , programa dilleri için geliştirilmiş syntaxları inceleyen uygulamalarıdır.
+Phyton nesne tabanlı , yorumlamalı ,birimsel ve etkileşimli yüksek seviyeli bir programlama dilidir.
+Programlamada Türkçe kelime kullanmamaya özen göstermeliyiz
+Dünyadaki evrensel dil İngilizcedir.
+Ctrl+s hızlı kaydetme demektir.
+F5 veya Fn+F5 çalıştırır.
+Değişkenler ;veri, değer sakladığımız ufak bölümlerdir.
+Değişkenler,sayısal değerler için integer, sözel değerler için String'dir.
+_ başta sonda her yerde kullanılır ancak boşluk virgül ,artı(+) veyahut soru işareti gibi şeyler konulamaz.
+biz değişken ismi olarak phyton diline ait komutlarını kullanamayız.
+Phytonda toplama ,cıkarma ,mod alma ,tam sayı bölme gibi matematiksel operatörler vardır.** üs almadır.
+Matematiksel işlemlerde öncelik şu şıradadır : parantez içi ,üs alma,çarpma , bölme , mod alma ve toplama ,çıkarmadır.
+i=i+8+j ile i+=j+8 arasında hiç bir fark yoktur
+int tamsayı veri tipi,float ondalıklı sayı veri tipi,bool doğru yanlış(iki durum) veri tipi,str karakter veri tipi.
+= atama operatörü iken == ise karşılaştırma operatörüdür.
+# açıklama satırıdır. ide içinde sıkıntı çıkarmaz kodun işleyişine hernhangi bir etkisi yoktur
+veri giriş komutu input() 
+sep , çıktı mesajındaki karakterler arasına ayraç koymak içindir
+veri çıkış komutu print()
+if , tek koşula bağlı , if else çift koşula bağlı, if elif else çoklu koşula bağlı gerçekleşecek işlemler için kullanılır.
+Bool true ya da false döndürür.
+Mantıksa operatörler or , and ve not dır.
+döngüler for ve whiledir.
+for da döngü sayısı önceden bellidir ancak while de ise döngü sayısı önceden belli olmayıp koşula bağlıdır	
+Liste sıralı eleman dizisidir.
+liste içinde elemanın olup olmadığını belirlemek için in veya not in kullanılırız.
+range() fonksiyonu istenen aralıkta sayı üretmek için kullanılır
+döngülerde kullanılan break,şart sağlandığında döngüden bizi çıkartır.
+continue de ise şartı sağlayan hangisi ise onu atlayarak devam eder.
+fonksiyon, programın belli işlevini yerine getiren küçük program parçalarıdır
+fonk tanımlamak için def kullanılır.
+fonksiyonlarda return döndürülecek olan şey belirler
+fonksiyonlarda pass yazarsak onu pas geçiyoruz hata vermez en azından
+lambda kısaltma için kullanılır
+kendi kendini çagıran fonksiyonlara özyineli fonksiyon denir
+'x' x i karakter olarak tanımlamış olduk.
+indexler 0 dan başlar.
+indexte [:] string dizisini bölmek için kullanılır.
+bir stringi değiştirmek için stringeatananisim.replace() kullanılır 
+stringi listeye dönüstermek icin stringeatananisim.split() kullanılır.	
+stringteki bulunanların uzunlugunu bulma icin stringeatananisim.count()
+string ifadeler arasında karşılaştırmayı is ile yapılabilir.
+stringin tersini almak icin	''.join(reversed(strl)) kullanılır
+stringin harflerini kücültmek icin stringeatananisim.lower()
+stringin harflerini büyültmek icin stringeatananisim.upper()
+büyükleri kücük ,kücükleri büyük yazmak icin stringeatananisim.swapcase
+bir string ifadede başka bir string aramak için in not in komutları kullanılır.
+Dizi aynı türden elemanların oluşturdugu sıralı objelerdir.
+Listelerin veri tipi List'dir.
+dizide liste içindeki argümanımızı diziyeatananisim.index yazarak bulabiliriz.
+Diziye eleman eklemek için diziyeatananisim.append() kullanılır ve dizinin sonuna eklenir
+dizideki eleman sayısını bulmak icin len(diziyeatananisim) kullanlır
+dizileri birleştirmek için extend kullanılır.
+diziyi ters çevirmek için diziyeatananisim.reverse()
+dizideki en kücük eleman için min , en büyük eleman için max komutu kullanılır.
+diziden eleman silmek için diziyeatananisim.remove
+diziyi kücükten büyüge göre sıralamak icin diziyeatananisim.sort()
+enumerate() numaralandırma için kullanılır.
+sözlük temelde dizi gibi düşünülebilir ancak ikişerli olaraktır.
+ikişerliden kastımız ise sol taraf anahtar : sağ taraf değer olacaktır
+sözlügeatananisim.pop silme işlemi için kullanılır.
+sözlügeatananisim.keys() sadece sag taraftaki anahtarları yazdırır
+sözlügeatananisim.values() sade sol taraftaki degerleri yazdırır
+küme seti birden cok verinin tutulmasını sağlar
+birden çok veri türünü bir arada bulundurabilen değiştirilemeyen veri tipleridir.
+oop de pass boş geçmek anlamına gelmektedir.
+init() metodu sınıfta başlangıç değerleri atarken bunu __init__ metodu ile yaparız 
+def __init__(self)---> self in yazılması zorunludur.
+dir() komutu , nesnelerin özellikleri hakkında bilgi edinme imkanı sağlar 
+kalıtım(inheritance),üst sınıfa ait olan özelliklerin 	alt sınıflara miraz olarak aktarılması özelliğidir.Miras da diyebiliriz.
+modül , birbirini tamamlayan fonksiyonlardan oluşır.
+abs komutu mutlak değerli düşündürür.
+round girilen değeri yuvarlar
+pow üstünü almaya yarar.
+random sayı için random importu lazımdır ve random.randint i bir şeye atamalıyız.
+piksel 	bir ekranda oluşan görüntüde insan gözünün ayırt edebileceği en kücük birimdir.
+grafikle ilgili işlemlerde import turtle kullanılır.bir nevi çizim uygulamaları da denebilir.
+turtle.forward() ne kadar ileri gitmesi , turtle.backward() ne kadar geri gitmesini istediğimizi belirtiyoruz ayrıca piksel bazında düşünülür.
+turtle.right() kaç derece sağa dönmesini istediğinizi söylüyoruz.
+turtle.left() kaç derece sola dönmesini istediğimizi söylüyoruz.
+turtle.getshapes() içeriginde neler olduğunu bize söylüyor.
+hideturtle --> şekli gizlememizi sağlar.
+renklendirme için color(çizgirengi,dolgurengi) kullanılır.
+colormode() renkleri kendimiz belirliyoruz.
+onclick(f) mouse butonu tıklandığında f fonksiyonu çağırılır. 
+onrelease(f) mouse butonu bırakıldığında f fonksiyonu çağırılır . 
+ondrag(f) mouse sürüklemesi olduğnda f fonksiyonu çağırılır.  
+listen() tuş olaylarını yakalamak için turtle ekranını dinler.
+onkey(f,tus) ilgili klavye tusu bırakıldıgında f fonksiyonunu cagırır.	
+mainloop() | done() olay yakalama döngüsü başlatır.
+exitonclick() mouseye tıklandığında bye() fonksiyonunu cagırır.
+textinput("baslık","mesaj") bir iletişim kutusu içerisine string tipte veri girilmesini bekler
+numinput("baslık","mesaj") bir iletisim kutusu icerisine float tipte veri girilmesini bekler.
+write() ekrana yazı yazar
+delay() milisaniye cinsinden cizim hareketleri arasındaki gecikmeyi ayarlar.
+tracer(n,delay) animasyon ayarlarını ayarlar.
+update()cizim ekranını günceller+ tracer fonksiyonundan sonra kesinlikle kullanılmalı.
+distance()mesafeyi verir
