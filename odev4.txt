@@ -1,0 +1,180 @@
+soru 4
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.is_end_of_word = False
+
+def build_trie(words):
+    root = TrieNode()
+    for word in words:
+        node = root
+        for char in word:
+            if char not in node.children:
+                node.children[char] = TrieNode()
+            node = node.children[char]
+        node.is_end_of_word = True
+    return root
+
+def find_words(board, words):
+    def dfs(i, j, trie, path):
+        letter = board[i][j]
+        current_node = trie.children.get(letter)
+
+        if not current_node:
+            return
+
+        path += letter
+        if current_node.is_end_of_word:
+            result.add(path)
+            current_node.is_end_of_word = False  # Duplicate kontrolü
+
+        board[i][j] = "#"  # Ziyaret edildi olarak işaretle
+
+        for x, y in [(i - 1, j), (i + 1, j), (i, j - 1), (i, j + 1)]:
+            if 0 <= x < m and 0 <= y < n and board[x][y] != "#":
+                dfs(x, y, current_node, path)
+
+        board[i][j] = letter  # Geri alma adımı
+
+    trie = build_trie(words)
+    result = set()
+    m, n = len(board), len(board[0])
+
+    for i in range(m):
+        for j in range(n):
+            dfs(i, j, trie, "")
+
+    return list(result)
+
+# Örnek kullanım
+board = [
+    ["o", "a", "a", "n"],
+    ["e", "t", "a", "e"],
+    ["i", "h", "k", "r"],
+    ["i", "f", "l", "v"]
+]
+
+words = ["oath", "pea", "eat", "rain"]
+
+output = find_words(board, words)
+print(output)
+--------------------------------------------------------------------------------------
+ödev 3
+
+def textToNumbers(text):
+    charMap = {
+        '1':[1],
+        '2':[2,2,2,2],
+        '3':[3,3,3,3],
+        '4':[4,4,4,4],
+        '5':[5,5,5,5],
+        '6':[6,6,6,6],
+        '7':[7,7,7,7,7],
+        '8':[8,8,8,8],
+        '9':[9,9,9,9,9],
+        'a': [2],
+        'b': [2, 2],
+        'c': [2, 2,2],
+        'd': [3],
+        'e': [3, 3],
+        'f': [3, 3,3],
+        'g': [4],
+        'h': [4, 4],
+        'i': [4, 4,4],
+        'j': [5],
+        'k': [5, 5],
+        'l': [5, 5,5],
+        'm': [6],
+        'n': [6, 6],
+        'o': [6, 6,6],
+        'p': [7],
+        'q': [7, 7],
+        'r': [7, 7,7],
+        's': [7, 7,7,7],
+        't': [8],
+        'u': [8, 8],
+        'v': [8, 8,8],
+        'w': [9],
+        'x': [9, 9],
+        'y': [9, 9,9],
+        'z': [9, 9,9,9],
+        ' ': [0]
+    }
+
+    result = []
+    for char in text:
+        result.extend(charMap[char])
+
+    return result
+
+# Örnek kullanım
+textInput = "mekatek"
+output = textToNumbers(textInput)
+print(output)
+---------------------------------------------------------------------
+ödev 2 
+
+def three_sum(nums):
+    result = [] #sonucu boş diziye atadık.
+    nums.sort()  # Diziyi sırala
+
+    for i in range(len(nums) - 2):
+        #range, belirli aralıkta bulunan sayıları göstermek için kullanılır.
+        #len , String ifadesinin uzunluğunu yani karakter sayısını verir.
+        if i > 0 and nums[i] == nums[i - 1]:
+            continue  # İlk elemanı da dahil etmek için
+
+        left, right = i + 1, len(nums) - 1
+
+        while left < right:
+            total = nums[i] + nums[left] + nums[right]
+
+            if total < 0:
+                left += 1
+                #solu birer birer arttırmak icin
+            elif total > 0:
+                right -= 1
+                #sagı birer birer azaltmak icin 
+            else:
+                result.append([nums[i], nums[left], nums[right]])
+                # .append() yeni öğeyi listenin en sonuna ekler
+
+                while left < right and nums[left] == nums[left + 1]:
+                    left += 1  # Sol sayıdaki bir döngüyü atla
+                while left < right and nums[right] == nums[right - 1]:
+                    right -= 1  # Sağ sayıdaki bir döngüyü atla
+
+                left += 1
+                right -= 1
+
+    return result
+
+# Örnek kullanım
+num_list = [-1, 0, 1, 2, -1, -4]
+result = three_sum(num_list)
+print(result)
+------------------------------------------------------------------
+ödev 1
+def twoSum(nums, target):
+    numIndices = {}  # Sayıları ve indexlerini tutacak bir sözlük 
+    for i, num in enumerate(nums):
+        a = target - num  #  Hedefe ulaşmak için yazdık
+        if a in numIndices:
+            return [numIndices[a], i]  # İki sayınınindekslerini döndür
+        numIndices[num] = i  # Sayıyı sözlüge ekledik
+
+
+# Örnek kullanım
+numList = [2, 3, 4,]
+targetSum = 6
+
+result = twoSum(numList, targetSum)
+
+if result:
+    print(f"İki sayının indeksleri: {result[0]} ve {result[1]}")
+else:
+    print("İki sayının indeksleri bulunamadı.")
+------------------------------------------------------------------
+
+ÖDEV 4 TE CHATGPT VE İNTERNET SAYFALARINDAN YARDIM ALDIM ÖZELLİKLE SÖYLEME İHTİYACI DUYDUM.
+
